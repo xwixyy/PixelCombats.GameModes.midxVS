@@ -1,6 +1,6 @@
 {
-  "Name": "TDM",
-  "Description": "Team Death Match. Битва двух команд",
+  "Name": "midx",
+  "Description":" duel ",
   "StartClientVersion": 573,
   "MapFilter": {
     "IsBlank": false,
