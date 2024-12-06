@@ -3,24 +3,19 @@
 import { Color } from 'pixel_combats/basic';
 import { Teams } from 'pixel_combats/room' ;
 // Импортируем необходимые модули из PixelCombats
+import { Color } from 'pixel_combats/basic';
+import { Teams } from 'pixel_combats/room';
 
-// Создаем команду "Смотрящий"
-const teamWatcher = new Team({
-    name: 'Смотрящий',
-    color: 'blue', // Голубой цвет команды
-});
+// Создаем команды
+const watcherTeam = new Teams('Смотрящий', Color.BLUE);
+const seekerTeam = new Teams('Ищет вас', Color.RED);
 
-// Создаем команду "Ищет вас"
-const teamSeeker = new Team({
-    name: 'Ищет вас',
-    color: 'red', // Красный цвет команды
-});
-
+// Пример вывода информации о командах
+console.log(Команда: ${watcherTeam.name}, Цвет: ${watcherTeam.color});
+console.log(Команда: ${seekerTeam.name}, Цвет: ${seekerTeam.color});
 // Функция для отображения информации о командах
 function displayTeams() {
-    console.log(Команда: ${teamWatcher.name}, Цвет: ${teamWatcher.color});
-    console.log(Команда: ${teamSeeker.name}, Цвет: ${teamSeeker.color});
-}
+    consol
 
 // Вызов функции для отображения информации о командах
 displayTeams();
